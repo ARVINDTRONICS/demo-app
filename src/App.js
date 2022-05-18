@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { ButtonComponent } from "./components/Shared/Button";
 
 function App() {
+  const add = (a, b) => {
+    return a + b;
+  };
+
+  let applyColor = false;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js chnage by arvind</code>.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React is fun
-        </a>
-      </header>
+    <div className={applyColor ? "name" : ""}>
+      {[1, 2, 3].map((value, index) => {
+        return (
+          <div>
+            <p>
+              Index is {index} - Value is {value}
+            </p>
+          </div>
+        );
+      })}
+      <div className={"button-container"}>
+        <div>
+          <ButtonComponent name={"Arvind"} color={"red"}  />
+        </div>
+        <div>
+          <ButtonComponent name={"Tamil"} color={"blue"} />
+        </div>
+      </div>
     </div>
   );
 }
 
 export default App;
+
+// <div className={applyColor?"name":""}>
+//       {[1, 2, 3].map((value, index) => {
+//         return (
+//           <div>
+//             <p>
+//               Index is {index} - Value is {value}
+//             </p>
+//           </div>
+//         );
+//       })}
+//     </div>
