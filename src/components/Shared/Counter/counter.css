@@ -1,0 +1,27 @@
+.counter-wrap{
+
+
+    width:200px;
+
+    height:250px;
+
+    border: 1px solid red;
+
+    display: flex;
+
+    flex-direction:column;
+
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+
+button{
+
+    width:50px;
+    margin:25px;
+    background-color: lightblue;
+    border:none;
+}
