@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { ButtonComponent } from "./components/Shared/Button";
-
+import {Counter} from "./components/Shared/Counter";
 function App() {
   const add = (a, b) => {
     return a + b;
@@ -28,6 +28,8 @@ function App() {
           <ButtonComponent name={"Tamil"} color={"blue"} />
         </div>
       </div>
+
+      <Counter/>
     </div>
   );
 }
