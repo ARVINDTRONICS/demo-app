@@ -4,6 +4,7 @@ import { ButtonComponent } from "./components/Shared/Button";
 import HeaderTitle from "./Title";
 
 
+import {Counter} from "./components/Shared/Counter";
 function App() {
     const add = (a, b) => {
     return a + b;
@@ -29,7 +30,9 @@ function App() {
           <ButtonComponent name={"Tamil"} color={"blue"} />
         </div>
       </div>
-      <HeaderTitle/>
+      
+
+      <Counter/>
     </div>
   );
 }
