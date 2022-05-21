@@ -1,16 +1,17 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { ButtonComponent } from "./components/Shared/Button";
+import HeaderTitle from "./Title";
+
 
 function App() {
-  const add = (a, b) => {
+    const add = (a, b) => {
     return a + b;
   };
-
   let applyColor = false;
-
   return (
     <div className={applyColor ? "name" : ""}>
+      <HeaderTitle/>
       {[1, 2, 3].map((value, index) => {
         return (
           <div>
@@ -28,6 +29,7 @@ function App() {
           <ButtonComponent name={"Tamil"} color={"blue"} />
         </div>
       </div>
+      <HeaderTitle/>
     </div>
   );
 }
